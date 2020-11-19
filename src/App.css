@@ -1,6 +1,11 @@
 * {
   margin: 0;
 }
+
+.app {
+  width: 100%;
+}
+
 .app__dropdown {
   margin-left: 40%;
   display: flex;
@@ -39,8 +44,8 @@
   height: 50px;
 }
 
-.nabar {
+/* .nabar {
   text-decoration: none;
   display: flex;
   background-color: blue;
-}
+} */

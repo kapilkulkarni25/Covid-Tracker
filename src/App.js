@@ -11,6 +11,7 @@ import corona from "./images/covid.png";
 //https://disease.sh/v3/covid-19/countries
 
 function App() {
+  // eslint-disable-next-line
   const [country, setInputCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [countries, setCountries] = useState([]);
