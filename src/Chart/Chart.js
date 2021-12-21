@@ -11,7 +11,6 @@ const Chart = (props) => {
     fetchAPI();
   }, []);
 
-  console.log(props);
   // Chart.defaults.scale.gridLines.drawOnChartArea = false;
   const lineChart = dailyData ? (
     <Line
@@ -20,8 +19,8 @@ const Chart = (props) => {
           display: false,
           color: "#FFFFFF",
         },
-        labels: dailyData.map((date) => date),
-        display: false,
+        labels: dailyData.map((date) => date.date),
+        display: true,
         datasets: [
           {
             data: dailyData.map(({ confirmed }) => confirmed),
